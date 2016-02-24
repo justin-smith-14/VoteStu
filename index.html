@@ -1,40 +1,52 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-  <title>We Want Stu</title>
-  <link rel="stylesheet" href="css/style.css">
+    <title>We Want Stu</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
 <header id="top" class="main-header">
-  <h1>Stu Stuedeman</h1>
-  <h5>for Vestavia's Next Basketball Coach</h5>
-  <img src="./img/StuRed.png">
+    <h1>Stu Stuedeman</h1>
+    <h5>for Vestavia's Next Basketball Coach</h5>
+    <img src="./img/StuRed.png">
 </header>
+
 <div id="main-content">
+    <div class="head">
+        <h2>Coaching is in his blood,
+            <br>Rebel Alumni,
+            <br>Knows how to win,
+            <br>Love for the Game!
+        </h2>
 
-  <div class="head">
-  <h2>Coaching is in his blood,
-    <br>Rebel Alumni,
-    <br>Knows how to win,
-    <br>Love for the Game!</h2>
-  <br><br></h1>
+        <br>
+        <br>
     </div>
 
 
-  <div class="name-input">
-    <form class="first-name">
-        <input class="first-name" title="First Name" type="text" placeholder="First Name">
-    </form>
+    <div class="name-input">
+        <form id="vote" name="voteForStu" action="" method="POST" target="no-target">
 
-    <form class="last-name">
-        <input class="last-name" title="Last Name" type="text" placeholder="Last Name">
-    </form>
+            <div class="first-name">
+                <input class="first-name" id="firstName" name="firstName" title="First Name" type="text" placeholder="First Name">
+            </div>
 
-    <form class="vote" action="./share.html">
-        <input type="submit" value="Join the Movement!" style="background:red; border:none; color:white; cursor: pointer;">
-      </form>
+            <div class="last-name">
+                <input class="last-name" id="lastName" name="lastName" title="Last Name" type="text" placeholder="Last Name">
+            </div>
+
+            <div class="vote">
+                <input type="submit" id="formSubmit" value="Join the Movement!" style="background:red; border:none; color:white">
+            </div>
+
+        </form>
     </div>
-  </div>
+</div>
+<iframe src="#" id="no-target" name="no-target" style="visibility:hidden"></iframe>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 </body>
+
 </html>
