@@ -3,16 +3,10 @@
     box-sizing: border-box;
 }
 
-@font-face {
-    font-family: octin-college-regular;
-    src: url(octin%20college%20rg.ttf);
-}
-
 body {
-    font-family: "octin-college-regular";
+    font-family: "Arial", sans-serif;
     text-align: center;
     background-color: #000040;
-    letter-spacing: 5px;
 }
 
 img {
@@ -41,18 +35,11 @@ form {
 }
 
 input {
-    background: linear-gradient(red, #800000 90%);
+    background-color: red;
     color: white;
     height: 100px;
     width: 300px;
     border: 0;
     border-radius: 5px;
     font-size: 30px;
-    text-shadow: black 2px 2px;
-    font-family: octin-college-regular;
-}
-
-input:active {
-    background: linear-gradient(#800000, red 90%);
-    text-shadow: black -2px -2px;
 }
