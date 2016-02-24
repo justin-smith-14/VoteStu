@@ -14,6 +14,14 @@ body {
 h1{
     text-align: center;
     font-size: 4rem;
+    margin-bottom: 5px;
+}
+
+h5{
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top:0;
+    color: gray;
 }
 
 h2 {
@@ -67,7 +75,7 @@ img {
 }
 
 .head {
-    padding-top: 100px;
+    padding-top: 50px;
 }
 
 /* Media Styles */
