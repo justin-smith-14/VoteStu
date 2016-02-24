@@ -1,0 +1,58 @@
+/* Base Styles -------------- */
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: octin-college-regular;
+    src: url(octin%20college%20rg.ttf);
+}
+
+body {
+    font-family: "octin-college-regular";
+    text-align: center;
+    background-color: #000040;
+    letter-spacing: 5px;
+}
+
+img {
+    height: 36%;
+    width: 36%;
+    float: right;
+}
+
+h1 {
+    padding-top: 12%;
+    font-size: 4rem;
+}
+
+h2 {
+    font-size: 2rem;
+}
+
+h1, h2 {
+    color: white;
+    text-shadow: 0 1px 1px rgba(0,0,0,.8);
+}
+
+form {
+    text-align: center;
+    padding-top: 5%;
+}
+
+input {
+    background: linear-gradient(red, #800000 90%);
+    color: white;
+    height: 100px;
+    width: 300px;
+    border: 0;
+    border-radius: 5px;
+    font-size: 30px;
+    text-shadow: black 2px 2px;
+    font-family: octin-college-regular;
+}
+
+input:active {
+    background: linear-gradient(#800000, red 90%);
+    text-shadow: black -2px -2px;
+}
