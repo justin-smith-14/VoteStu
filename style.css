@@ -55,6 +55,10 @@ h2 {
     padding-left: 100px;
 }
 
+#mobile {
+    display: none;
+}
+
 .header {
     padding-left: 35%;
 }
@@ -70,6 +74,7 @@ input {
     border-radius: 4px;
     display: inline-block;
     margin-bottom: 5px;
+    -webkit-appearance: none;
 }
 
 form {
@@ -104,20 +109,31 @@ img {
     .head {
         text-align: center;
         font-size: 0.7em;
+        padding-top: 0;
+        margin-left: 0;
+    }
+
+    .header {
+        padding-left: 10%;
+    }
+
+    h2 {
+        margin: 5px 0 0;
     }
 
     .name-input {
         text-align: center;
     }
 
-    input {
-
+    form {
+        padding: 0;
     }
 
-    .right-image {
-        display: none;
+    img {
+        float: none;
+        width: 35%;
+        margin-left: 37%;
     }
-
 }
 
 @media (max-width: 768px) {
@@ -133,14 +149,24 @@ img {
     .head {
         text-align: center;
         font-size: 0.7em;
+        margin-left: 0;
+    }
+
+    .header {
+        padding-left: 10%;
     }
 
     .name-input {
         text-align: center;
     }
 
-    .right-image {
-        display: none;
+    form {
+        padding: 0;
     }
 
+    img {
+        float: none;
+        width: 35%;
+        margin-left: 40%;
+    }
 }

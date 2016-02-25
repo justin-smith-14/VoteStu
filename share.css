@@ -42,4 +42,58 @@ input {
     border: 0;
     border-radius: 5px;
     font-size: 30px;
+    -webkit-appearance: none;
+}
+
+@media (max-width: 1032px) {
+    body {
+        margin: 0;
+        padding-left: 0;
+        border: none;
+    }
+
+    .head {
+        text-align: center;
+        padding-top: 0;
+        font-size: 0.7em;
+        margin-left: 0;
+    }
+
+    h2 {
+        margin: 5px 0 0;
+    }
+
+    form {
+        padding: 50px;
+    }
+
+    img {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        margin: 0;
+        padding-left: 0;
+        border: none;
+    }
+
+    .head {
+        text-align: center;
+        font-size: 0.7em;
+        margin-left: 0;
+    }
+
+    h2 {
+        margin: 50px;
+    }
+
+    form {
+        padding: 50px;
+    }
+
+    img {
+        display: none;
+    }
 }
