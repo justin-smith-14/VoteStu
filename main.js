@@ -14,3 +14,18 @@ $('#vote').on('submit', function() {
     $(location).attr('href', url + 'share.html');
 });
 
+function validateFirst() {
+    var x = document.forms["voteForStu"]["firstName"].value;
+    if (x == " ") {
+        alert("Please complete that name fields");
+        return false;
+    }
+}
+
+function validateLast() {
+    var x = document.forms["voteForStu"]["lastName"].value;
+    if (x == " ") {
+        alert("Please complete that name fields");
+        return false;
+    }
+}

@@ -30,7 +30,7 @@
 
 
     <div class="name-input">
-      <form id="vote" name="voteForStu" action="" method="POST" target="no-target">
+      <form id="vote" name="voteForStu" action="" method="POST" target="no-target" onsubmit="return validateFirst() || validateLast()">
 
             <div class="first-name">
                 <input class="first-name" id="firstName" name="firstName" title="First Name" type="text" placeholder="First Name" required>
