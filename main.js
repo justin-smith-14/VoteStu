@@ -20,4 +20,3 @@ $('#vote').on('submit', function() {
     }
 
 });
-
