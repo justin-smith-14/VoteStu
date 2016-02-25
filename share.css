@@ -10,6 +10,7 @@ body {
 }
 
 img {
+    padding-top: 40px;
     height: 36%;
     width: 36%;
     float: right;
@@ -45,6 +46,14 @@ input {
     -webkit-appearance: none;
 }
 
+footer {
+    padding-top: 90px;
+    padding-left: 10px;
+    color: white;
+    text-align: left;
+    font-size: 13px;
+}
+
 @media (max-width: 1032px) {
     body {
         margin: 0;
@@ -69,6 +78,12 @@ input {
 
     img {
         display: none;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 25%;
+        font-size: 14px;
     }
 }
 
@@ -95,5 +110,11 @@ input {
 
     img {
         display: none;
+    }
+
+    footer {
+        text-align: center;
+        padding-top: 25%;
+        font-size: 14px;
     }
 }

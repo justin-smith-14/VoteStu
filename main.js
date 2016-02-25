@@ -1,7 +1,4 @@
-function run() {
-    console.log('running');
-}
-run();
+
 
 $('#vote').on('submit', function() {
     var baseUrl = 'https://docs.google.com/forms/d/1EfMbgiUZNYXykAkeelbwlckQucAkfIxzThHOnj7jH5M/formResponse?';
