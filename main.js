@@ -12,7 +12,8 @@ $('#vote').on('submit', function() {
     var lastNameId = 'entry.35492775';
 
     var submitUrl = (baseUrl + firstNameId + '=' + firstName + '&' + lastNameId + '=' + lastName + submitRef);
-
-    console.log(submitUrl);
     $(this)[0].action = submitUrl;
+    var url = $(location).attr('protocol');
+    $(location).attr('href', url + 'share.html');
 });
+

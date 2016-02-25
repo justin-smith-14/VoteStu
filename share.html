@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Vote for Stu</title>
-    <link rel="stylesheet" href="css/share.css">
+    <link rel="stylesheet" href="./share.css">
     <script>
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
                     (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -15,12 +15,43 @@
 </head>
 <body>
     <div>
-        <img src="./img/StuRed.png">
+        <img src="./img/StuRedNew.png">
     </div>
     <h1>Thanks for your vote!</h1>
     <h2>Help spread the word by sharing to Facebook</h2>
     <form>
-        <input type="submit" value="Share">
+        <input type="submit" value="Share" style="cursor: pointer;" id="share_button">
     </form>
+
+    <div id="fb-root"></div>
+    <script>
+        window.fbAsyncInit = function() {
+            FB.init({appId: '715223838577267', status: true, cookie: true,
+                xfbml: true});
+        };
+        (function() {
+            var e = document.createElement('script'); e.async = true;
+            e.src = document.location.protocol +
+                    '//connect.facebook.net/en_US/all.js';
+            document.getElementById('fb-root').appendChild(e);
+        }());
+    </script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('#share_button').click(function(e) {
+            e.preventDefault();
+            FB.ui(
+                    {
+                        method: 'feed',
+                        name: 'Coach STU',
+                        link: 'http://localhost:63342/Vote4Stu/index.html',
+                        caption: 'I voted for Stu, you should too!',
+                        description: "Vote for Stu Stuedman as Vestavia Hill High School's next basketball coach.",
+                        message: 'I voted for Stu, you should too!'
+                    });
+            });
+        });
+    </script>
 </body>
 </html>
